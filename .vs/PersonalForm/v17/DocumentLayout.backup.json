@@ -1,0 +1,57 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\61vah\\source\\repos\\PersonalForm\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D68CDD6E-8928-4171-85DC-E6A045161022}|PersonalForm\\PersonalForm.csproj|C:\\Users\\61vah\\source\\repos\\PersonalForm\\personalform\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D68CDD6E-8928-4171-85DC-E6A045161022}|PersonalForm\\PersonalForm.csproj|solutionrelative:personalform\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D68CDD6E-8928-4171-85DC-E6A045161022}|PersonalForm\\PersonalForm.csproj|c:\\users\\61vah\\source\\repos\\personalform\\personalform\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D68CDD6E-8928-4171-85DC-E6A045161022}|PersonalForm\\PersonalForm.csproj|solutionrelative:personalform\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 332,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\61vah\\source\\repos\\PersonalForm\\PersonalForm\\Form1.cs",
+              "RelativeDocumentMoniker": "PersonalForm\\Form1.cs",
+              "ToolTip": "C:\\Users\\61vah\\source\\repos\\PersonalForm\\PersonalForm\\Form1.cs*",
+              "RelativeToolTip": "PersonalForm\\Form1.cs*",
+              "ViewState": "AgIAADUAAAAAAAAAAAAIwIIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-25T10:13:24.705Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\61vah\\source\\repos\\PersonalForm\\PersonalForm\\Form1.cs",
+              "RelativeDocumentMoniker": "PersonalForm\\Form1.cs",
+              "ToolTip": "C:\\Users\\61vah\\source\\repos\\PersonalForm\\PersonalForm\\Form1.cs [Design]*",
+              "RelativeToolTip": "PersonalForm\\Form1.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-25T10:10:31.331Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
