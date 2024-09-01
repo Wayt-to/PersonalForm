@@ -74,7 +74,7 @@ namespace PersonalForm
         {
             //Checking if all fields are filled
             if (tb_name.Text!=""&&tb_surname.Text!=""&&tb_fatherName.Text!=""&&mtb_id.Text!= "___________"&&cb_citizen.Text!=""&&mtb_phone.Text!= "(___)___-____"&&tb_adress.Text!=""&&cb_education.Text!=""&&cb_child.Text!=""&&cb_department.Text!="")
-            {
+            {   
                 string path = "C:/Users/61vah/Desktop/Personal Information Forms";
                 if (rb_genderMale.Checked)
                 {
@@ -95,6 +95,11 @@ namespace PersonalForm
                 }
 
                 string text = $"Name: {tb_name.Text}\nSurname: {tb_surname.Text}\nFather Name : {tb_fatherName.Text}\nID Number : {mtb_id.Text} \nCitizenship: {cb_citizen.SelectedItem}\nBirshplace: {tb_birthplace.Text}\nGender: {genderSelection}\nPhone Number : {mtb_phone.Text}\nAdress: {tb_adress.Text}\nEducation Level : {cb_education.SelectedItem}\nRelationship: {relationSelection}\nChildren: {cb_child.SelectedItem}";
+                if (rb_foreignYes.Checked && tb_langLevel.Text != "English - C1 etc...")
+                {
+                    text += $"\nThe personal knows {cb_foreignNumber.SelectedItem} foreign languages.\nForeign Languages and Levels:\n{tb_langLevel.Text}";
+                }
+                text += $"\nDepartment : {cb_department.SelectedItem}\n\nInspector's note: {tb_note.Text}\n";
 
                 //Creating and opening the personal info file
                 using (FileStream fs = new FileStream(path + $"/{tb_name.Text} {tb_surname.Text}_{mtb_id.Text}.txt", FileMode.OpenOrCreate))
