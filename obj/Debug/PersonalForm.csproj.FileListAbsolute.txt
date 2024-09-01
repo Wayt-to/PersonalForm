@@ -8,3 +8,13 @@ C:\Users\61vah\source\repos\PersonalForm\PersonalForm\obj\Debug\PersonalForm.csp
 C:\Users\61vah\source\repos\PersonalForm\PersonalForm\obj\Debug\PersonalForm.csproj.CoreCompileInputs.cache
 C:\Users\61vah\source\repos\PersonalForm\PersonalForm\obj\Debug\PersonalForm.exe
 C:\Users\61vah\source\repos\PersonalForm\PersonalForm\obj\Debug\PersonalForm.pdb
+C:\Users\61vah\Desktop\Development\repos\PersonalForm\PersonalForm\bin\Debug\PersonalForm.exe.config
+C:\Users\61vah\Desktop\Development\repos\PersonalForm\PersonalForm\bin\Debug\PersonalForm.exe
+C:\Users\61vah\Desktop\Development\repos\PersonalForm\PersonalForm\bin\Debug\PersonalForm.pdb
+C:\Users\61vah\Desktop\Development\repos\PersonalForm\PersonalForm\obj\Debug\PersonalForm.csproj.AssemblyReference.cache
+C:\Users\61vah\Desktop\Development\repos\PersonalForm\PersonalForm\obj\Debug\PersonalForm.Form1.resources
+C:\Users\61vah\Desktop\Development\repos\PersonalForm\PersonalForm\obj\Debug\PersonalForm.Properties.Resources.resources
+C:\Users\61vah\Desktop\Development\repos\PersonalForm\PersonalForm\obj\Debug\PersonalForm.csproj.GenerateResource.cache
+C:\Users\61vah\Desktop\Development\repos\PersonalForm\PersonalForm\obj\Debug\PersonalForm.csproj.CoreCompileInputs.cache
+C:\Users\61vah\Desktop\Development\repos\PersonalForm\PersonalForm\obj\Debug\PersonalForm.exe
+C:\Users\61vah\Desktop\Development\repos\PersonalForm\PersonalForm\obj\Debug\PersonalForm.pdb

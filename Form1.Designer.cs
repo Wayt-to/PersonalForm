@@ -29,51 +29,51 @@
         private void InitializeComponent()
         {
             this.gb_personalInfo = new System.Windows.Forms.GroupBox();
-            this.tb_note = new System.Windows.Forms.TextBox();
-            this.tb_adress = new System.Windows.Forms.TextBox();
-            this.rb_foreignNo = new System.Windows.Forms.RadioButton();
-            this.rb_married = new System.Windows.Forms.RadioButton();
-            this.rb_foreignYes = new System.Windows.Forms.RadioButton();
-            this.rb_genderFemale = new System.Windows.Forms.RadioButton();
+            this.btn_save = new System.Windows.Forms.Button();
+            this.mtb_id = new System.Windows.Forms.MaskedTextBox();
+            this.mtb_phone = new System.Windows.Forms.MaskedTextBox();
+            this.gb_rel = new System.Windows.Forms.GroupBox();
             this.rb_single = new System.Windows.Forms.RadioButton();
+            this.rb_married = new System.Windows.Forms.RadioButton();
+            this.tb_note = new System.Windows.Forms.TextBox();
+            this.gb_foreign = new System.Windows.Forms.GroupBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.tb_langLevel = new System.Windows.Forms.TextBox();
+            this.cb_foreignNumber = new System.Windows.Forms.ComboBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.rb_foreignNo = new System.Windows.Forms.RadioButton();
+            this.rb_foreignYes = new System.Windows.Forms.RadioButton();
+            this.label15 = new System.Windows.Forms.Label();
+            this.gb_gender = new System.Windows.Forms.GroupBox();
             this.rb_genderMale = new System.Windows.Forms.RadioButton();
+            this.rb_genderFemale = new System.Windows.Forms.RadioButton();
             this.cb_department = new System.Windows.Forms.ComboBox();
+            this.tb_adress = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
             this.cb_child = new System.Windows.Forms.ComboBox();
             this.cb_education = new System.Windows.Forms.ComboBox();
             this.cb_citizen = new System.Windows.Forms.ComboBox();
-            this.label11 = new System.Windows.Forms.Label();
             this.tb_surname = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.tb_birthplace = new System.Windows.Forms.TextBox();
             this.tb_fatherName = new System.Windows.Forms.TextBox();
-            this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.tb_name = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.cb_foreignNumber = new System.Windows.Forms.ComboBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.tb_langLevel = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
-            this.gb_foreign = new System.Windows.Forms.GroupBox();
-            this.gb_gender = new System.Windows.Forms.GroupBox();
-            this.gb_rel = new System.Windows.Forms.GroupBox();
-            this.mtb_phone = new System.Windows.Forms.MaskedTextBox();
-            this.mtb_id = new System.Windows.Forms.MaskedTextBox();
-            this.tb_birthplace = new System.Windows.Forms.TextBox();
-            this.tb_infoTotal = new System.Windows.Forms.Label();
-            this.btn_save = new System.Windows.Forms.Button();
-            this.lbl_infoTotal = new System.Windows.Forms.Label();
+            this.lb_personalInfo = new System.Windows.Forms.ListBox();
+            this.lbl_message = new System.Windows.Forms.Label();
             this.gb_personalInfo.SuspendLayout();
+            this.gb_rel.SuspendLayout();
             this.gb_foreign.SuspendLayout();
             this.gb_gender.SuspendLayout();
-            this.gb_rel.SuspendLayout();
             this.SuspendLayout();
             // 
             // gb_personalInfo
@@ -115,72 +115,44 @@
             this.gb_personalInfo.TabStop = false;
             this.gb_personalInfo.Text = "Personal Information";
             // 
-            // tb_note
+            // btn_save
             // 
-            this.tb_note.Location = new System.Drawing.Point(47, 270);
-            this.tb_note.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.tb_note.Multiline = true;
-            this.tb_note.Name = "tb_note";
-            this.tb_note.Size = new System.Drawing.Size(379, 96);
-            this.tb_note.TabIndex = 4;
+            this.btn_save.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn_save.ForeColor = System.Drawing.SystemColors.InfoText;
+            this.btn_save.Location = new System.Drawing.Point(731, 347);
+            this.btn_save.Name = "btn_save";
+            this.btn_save.Size = new System.Drawing.Size(159, 48);
+            this.btn_save.TabIndex = 9;
+            this.btn_save.Text = "Save\r\n";
+            this.btn_save.UseVisualStyleBackColor = true;
+            this.btn_save.Click += new System.EventHandler(this.btn_save_Click);
             // 
-            // tb_adress
+            // mtb_id
             // 
-            this.tb_adress.Location = new System.Drawing.Point(403, 60);
-            this.tb_adress.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.tb_adress.Multiline = true;
-            this.tb_adress.Name = "tb_adress";
-            this.tb_adress.Size = new System.Drawing.Size(164, 77);
-            this.tb_adress.TabIndex = 4;
+            this.mtb_id.Location = new System.Drawing.Point(98, 114);
+            this.mtb_id.Mask = "00000000000";
+            this.mtb_id.Name = "mtb_id";
+            this.mtb_id.Size = new System.Drawing.Size(145, 23);
+            this.mtb_id.TabIndex = 8;
             // 
-            // rb_foreignNo
+            // mtb_phone
             // 
-            this.rb_foreignNo.AutoSize = true;
-            this.rb_foreignNo.Location = new System.Drawing.Point(178, 19);
-            this.rb_foreignNo.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.rb_foreignNo.Name = "rb_foreignNo";
-            this.rb_foreignNo.Size = new System.Drawing.Size(40, 19);
-            this.rb_foreignNo.TabIndex = 3;
-            this.rb_foreignNo.Text = "No";
-            this.rb_foreignNo.UseVisualStyleBackColor = true;
-            this.rb_foreignNo.CheckedChanged += new System.EventHandler(this.radioButton4_CheckedChanged);
+            this.mtb_phone.Location = new System.Drawing.Point(402, 33);
+            this.mtb_phone.Mask = "(999) 000-0000";
+            this.mtb_phone.Name = "mtb_phone";
+            this.mtb_phone.Size = new System.Drawing.Size(165, 23);
+            this.mtb_phone.TabIndex = 6;
             // 
-            // rb_married
+            // gb_rel
             // 
-            this.rb_married.AutoSize = true;
-            this.rb_married.Location = new System.Drawing.Point(76, 22);
-            this.rb_married.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.rb_married.Name = "rb_married";
-            this.rb_married.Size = new System.Drawing.Size(70, 19);
-            this.rb_married.TabIndex = 3;
-            this.rb_married.Text = "Married";
-            this.rb_married.UseVisualStyleBackColor = true;
-            this.rb_married.CheckedChanged += new System.EventHandler(this.radioButton4_CheckedChanged);
-            // 
-            // rb_foreignYes
-            // 
-            this.rb_foreignYes.AutoSize = true;
-            this.rb_foreignYes.Checked = true;
-            this.rb_foreignYes.Location = new System.Drawing.Point(118, 18);
-            this.rb_foreignYes.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.rb_foreignYes.Name = "rb_foreignYes";
-            this.rb_foreignYes.Size = new System.Drawing.Size(42, 19);
-            this.rb_foreignYes.TabIndex = 3;
-            this.rb_foreignYes.TabStop = true;
-            this.rb_foreignYes.Text = "Yes";
-            this.rb_foreignYes.UseVisualStyleBackColor = true;
-            this.rb_foreignYes.CheckedChanged += new System.EventHandler(this.rb_foreignYes_CheckedChanged);
-            // 
-            // rb_genderFemale
-            // 
-            this.rb_genderFemale.AutoSize = true;
-            this.rb_genderFemale.Location = new System.Drawing.Point(68, 22);
-            this.rb_genderFemale.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.rb_genderFemale.Name = "rb_genderFemale";
-            this.rb_genderFemale.Size = new System.Drawing.Size(64, 19);
-            this.rb_genderFemale.TabIndex = 3;
-            this.rb_genderFemale.Text = "Female";
-            this.rb_genderFemale.UseVisualStyleBackColor = true;
+            this.gb_rel.Controls.Add(this.rb_single);
+            this.gb_rel.Controls.Add(this.rb_married);
+            this.gb_rel.Location = new System.Drawing.Point(311, 200);
+            this.gb_rel.Name = "gb_rel";
+            this.gb_rel.Size = new System.Drawing.Size(256, 56);
+            this.gb_rel.TabIndex = 7;
+            this.gb_rel.TabStop = false;
+            this.gb_rel.Text = "Relationship";
             // 
             // rb_single
             // 
@@ -196,6 +168,144 @@
             this.rb_single.UseVisualStyleBackColor = true;
             this.rb_single.CheckedChanged += new System.EventHandler(this.rb_single_CheckedChanged);
             // 
+            // rb_married
+            // 
+            this.rb_married.AutoSize = true;
+            this.rb_married.Location = new System.Drawing.Point(76, 22);
+            this.rb_married.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.rb_married.Name = "rb_married";
+            this.rb_married.Size = new System.Drawing.Size(70, 19);
+            this.rb_married.TabIndex = 3;
+            this.rb_married.Text = "Married";
+            this.rb_married.UseVisualStyleBackColor = true;
+            // 
+            // tb_note
+            // 
+            this.tb_note.Location = new System.Drawing.Point(47, 270);
+            this.tb_note.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.tb_note.Multiline = true;
+            this.tb_note.Name = "tb_note";
+            this.tb_note.Size = new System.Drawing.Size(379, 96);
+            this.tb_note.TabIndex = 4;
+            // 
+            // gb_foreign
+            // 
+            this.gb_foreign.Controls.Add(this.label11);
+            this.gb_foreign.Controls.Add(this.tb_langLevel);
+            this.gb_foreign.Controls.Add(this.cb_foreignNumber);
+            this.gb_foreign.Controls.Add(this.label12);
+            this.gb_foreign.Controls.Add(this.rb_foreignNo);
+            this.gb_foreign.Controls.Add(this.rb_foreignYes);
+            this.gb_foreign.Location = new System.Drawing.Point(574, 22);
+            this.gb_foreign.Name = "gb_foreign";
+            this.gb_foreign.Size = new System.Drawing.Size(316, 234);
+            this.gb_foreign.TabIndex = 5;
+            this.gb_foreign.TabStop = false;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(7, 19);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(102, 15);
+            this.label11.TabIndex = 0;
+            this.label11.Text = "Foreign Language";
+            // 
+            // tb_langLevel
+            // 
+            this.tb_langLevel.Location = new System.Drawing.Point(129, 74);
+            this.tb_langLevel.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.tb_langLevel.Multiline = true;
+            this.tb_langLevel.Name = "tb_langLevel";
+            this.tb_langLevel.Size = new System.Drawing.Size(172, 154);
+            this.tb_langLevel.TabIndex = 4;
+            this.tb_langLevel.Enter += new System.EventHandler(this.tb_langLevel_Enter);
+            this.tb_langLevel.Leave += new System.EventHandler(this.tb_langLevel_Leave);
+            // 
+            // cb_foreignNumber
+            // 
+            this.cb_foreignNumber.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.cb_foreignNumber.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.cb_foreignNumber.FormattingEnabled = true;
+            this.cb_foreignNumber.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13"});
+            this.cb_foreignNumber.Location = new System.Drawing.Point(12, 43);
+            this.cb_foreignNumber.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.cb_foreignNumber.Name = "cb_foreignNumber";
+            this.cb_foreignNumber.Size = new System.Drawing.Size(289, 22);
+            this.cb_foreignNumber.TabIndex = 2;
+            this.cb_foreignNumber.Text = "Number of languages ​​known (except native language)";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(10, 70);
+            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(111, 30);
+            this.label12.TabIndex = 0;
+            this.label12.Text = "Foreign Languages \r\nand Levels";
+            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // rb_foreignNo
+            // 
+            this.rb_foreignNo.AutoSize = true;
+            this.rb_foreignNo.Location = new System.Drawing.Point(178, 19);
+            this.rb_foreignNo.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.rb_foreignNo.Name = "rb_foreignNo";
+            this.rb_foreignNo.Size = new System.Drawing.Size(40, 19);
+            this.rb_foreignNo.TabIndex = 3;
+            this.rb_foreignNo.Text = "No";
+            this.rb_foreignNo.UseVisualStyleBackColor = true;
+            // 
+            // rb_foreignYes
+            // 
+            this.rb_foreignYes.AutoSize = true;
+            this.rb_foreignYes.Checked = true;
+            this.rb_foreignYes.Location = new System.Drawing.Point(118, 18);
+            this.rb_foreignYes.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.rb_foreignYes.Name = "rb_foreignYes";
+            this.rb_foreignYes.Size = new System.Drawing.Size(42, 19);
+            this.rb_foreignYes.TabIndex = 3;
+            this.rb_foreignYes.TabStop = true;
+            this.rb_foreignYes.Text = "Yes";
+            this.rb_foreignYes.UseVisualStyleBackColor = true;
+            this.rb_foreignYes.CheckedChanged += new System.EventHandler(this.rb_foreignYes_CheckedChanged);
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(7, 270);
+            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(32, 15);
+            this.label15.TabIndex = 0;
+            this.label15.Text = "Note";
+            // 
+            // gb_gender
+            // 
+            this.gb_gender.Controls.Add(this.rb_genderMale);
+            this.gb_gender.Controls.Add(this.rb_genderFemale);
+            this.gb_gender.Location = new System.Drawing.Point(15, 200);
+            this.gb_gender.Name = "gb_gender";
+            this.gb_gender.Size = new System.Drawing.Size(228, 56);
+            this.gb_gender.TabIndex = 6;
+            this.gb_gender.TabStop = false;
+            this.gb_gender.Text = "Gender";
+            // 
             // rb_genderMale
             // 
             this.rb_genderMale.AutoSize = true;
@@ -208,7 +318,17 @@
             this.rb_genderMale.TabStop = true;
             this.rb_genderMale.Text = "Male";
             this.rb_genderMale.UseVisualStyleBackColor = true;
-            this.rb_genderMale.CheckedChanged += new System.EventHandler(this.rb_genderMale_CheckedChanged);
+            // 
+            // rb_genderFemale
+            // 
+            this.rb_genderFemale.AutoSize = true;
+            this.rb_genderFemale.Location = new System.Drawing.Point(68, 22);
+            this.rb_genderFemale.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.rb_genderFemale.Name = "rb_genderFemale";
+            this.rb_genderFemale.Size = new System.Drawing.Size(64, 19);
+            this.rb_genderFemale.TabIndex = 3;
+            this.rb_genderFemale.Text = "Female";
+            this.rb_genderFemale.UseVisualStyleBackColor = true;
             // 
             // cb_department
             // 
@@ -235,6 +355,25 @@
             this.cb_department.Name = "cb_department";
             this.cb_department.Size = new System.Drawing.Size(148, 23);
             this.cb_department.TabIndex = 2;
+            // 
+            // tb_adress
+            // 
+            this.tb_adress.Location = new System.Drawing.Point(403, 60);
+            this.tb_adress.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.tb_adress.Multiline = true;
+            this.tb_adress.Name = "tb_adress";
+            this.tb_adress.Size = new System.Drawing.Size(164, 77);
+            this.tb_adress.TabIndex = 4;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(200, 375);
+            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(71, 15);
+            this.label14.TabIndex = 0;
+            this.label14.Text = "Department";
             // 
             // cb_child
             // 
@@ -289,17 +428,6 @@
             this.cb_citizen.Size = new System.Drawing.Size(145, 23);
             this.cb_citizen.TabIndex = 2;
             // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(7, 19);
-            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(102, 15);
-            this.label11.TabIndex = 0;
-            this.label11.Text = "Foreign Language";
-            this.label11.Click += new System.EventHandler(this.label2_Click);
-            // 
             // tb_surname
             // 
             this.tb_surname.Location = new System.Drawing.Point(98, 60);
@@ -317,7 +445,6 @@
             this.label5.Size = new System.Drawing.Size(64, 15);
             this.label5.TabIndex = 0;
             this.label5.Text = "Birthplace";
-            this.label5.Click += new System.EventHandler(this.label2_Click);
             // 
             // label4
             // 
@@ -328,7 +455,6 @@
             this.label4.Size = new System.Drawing.Size(67, 15);
             this.label4.TabIndex = 0;
             this.label4.Text = "Citizenship";
-            this.label4.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -339,7 +465,14 @@
             this.label3.Size = new System.Drawing.Size(65, 15);
             this.label3.TabIndex = 0;
             this.label3.Text = "ID Number";
-            this.label3.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // tb_birthplace
+            // 
+            this.tb_birthplace.Location = new System.Drawing.Point(98, 169);
+            this.tb_birthplace.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.tb_birthplace.Name = "tb_birthplace";
+            this.tb_birthplace.Size = new System.Drawing.Size(145, 23);
+            this.tb_birthplace.TabIndex = 1;
             // 
             // tb_fatherName
             // 
@@ -348,17 +481,6 @@
             this.tb_fatherName.Name = "tb_fatherName";
             this.tb_fatherName.Size = new System.Drawing.Size(145, 23);
             this.tb_fatherName.TabIndex = 1;
-            this.tb_fatherName.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(200, 375);
-            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(71, 15);
-            this.label14.TabIndex = 0;
-            this.label14.Text = "Department";
             // 
             // label13
             // 
@@ -377,7 +499,6 @@
             this.tb_name.Name = "tb_name";
             this.tb_name.Size = new System.Drawing.Size(145, 23);
             this.tb_name.TabIndex = 1;
-            this.tb_name.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label10
             // 
@@ -398,17 +519,6 @@
             this.label2.Size = new System.Drawing.Size(55, 15);
             this.label2.TabIndex = 0;
             this.label2.Text = "Surname";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(7, 270);
-            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(32, 15);
-            this.label15.TabIndex = 0;
-            this.label15.Text = "Note";
             // 
             // label9
             // 
@@ -419,6 +529,16 @@
             this.label9.Size = new System.Drawing.Size(76, 15);
             this.label9.TabIndex = 0;
             this.label9.Text = "Father Name";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(308, 35);
+            this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(87, 15);
+            this.label16.TabIndex = 0;
+            this.label16.Text = "Phone Number";
             // 
             // label8
             // 
@@ -440,172 +560,40 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Name";
             // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(308, 35);
-            this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(87, 15);
-            this.label16.TabIndex = 0;
-            this.label16.Text = "Phone Number";
-            // 
-            // cb_foreignNumber
-            // 
-            this.cb_foreignNumber.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.cb_foreignNumber.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.cb_foreignNumber.FormattingEnabled = true;
-            this.cb_foreignNumber.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13"});
-            this.cb_foreignNumber.Location = new System.Drawing.Point(12, 43);
-            this.cb_foreignNumber.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.cb_foreignNumber.Name = "cb_foreignNumber";
-            this.cb_foreignNumber.Size = new System.Drawing.Size(289, 22);
-            this.cb_foreignNumber.TabIndex = 2;
-            this.cb_foreignNumber.Text = "Number of languages ​​known (except native language)";
-            this.cb_foreignNumber.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(10, 70);
-            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(111, 30);
-            this.label12.TabIndex = 0;
-            this.label12.Text = "Foreign Languages \r\nand Levels";
-            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // tb_langLevel
-            // 
-            this.tb_langLevel.Location = new System.Drawing.Point(129, 74);
-            this.tb_langLevel.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.tb_langLevel.Multiline = true;
-            this.tb_langLevel.Name = "tb_langLevel";
-            this.tb_langLevel.Size = new System.Drawing.Size(172, 154);
-            this.tb_langLevel.TabIndex = 4;
-            this.tb_langLevel.TextChanged += new System.EventHandler(this.textBox8_TextChanged);
-            this.tb_langLevel.Enter += new System.EventHandler(this.tb_langLevel_Enter);
-            this.tb_langLevel.Leave += new System.EventHandler(this.tb_langLevel_Leave);
-            // 
             // label17
             // 
             this.label17.AutoSize = true;
             this.label17.Location = new System.Drawing.Point(937, 24);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(183, 15);
+            this.label17.Size = new System.Drawing.Size(120, 15);
             this.label17.TabIndex = 5;
-            this.label17.Text = "All Information About Personal :";
+            this.label17.Text = "Saved Personal Files";
             // 
-            // gb_foreign
+            // lb_personalInfo
             // 
-            this.gb_foreign.Controls.Add(this.label11);
-            this.gb_foreign.Controls.Add(this.tb_langLevel);
-            this.gb_foreign.Controls.Add(this.cb_foreignNumber);
-            this.gb_foreign.Controls.Add(this.label12);
-            this.gb_foreign.Controls.Add(this.rb_foreignNo);
-            this.gb_foreign.Controls.Add(this.rb_foreignYes);
-            this.gb_foreign.Location = new System.Drawing.Point(574, 22);
-            this.gb_foreign.Name = "gb_foreign";
-            this.gb_foreign.Size = new System.Drawing.Size(316, 234);
-            this.gb_foreign.TabIndex = 5;
-            this.gb_foreign.TabStop = false;
+            this.lb_personalInfo.FormattingEnabled = true;
+            this.lb_personalInfo.ItemHeight = 15;
+            this.lb_personalInfo.Location = new System.Drawing.Point(940, 45);
+            this.lb_personalInfo.Name = "lb_personalInfo";
+            this.lb_personalInfo.Size = new System.Drawing.Size(196, 379);
+            this.lb_personalInfo.TabIndex = 10;
             // 
-            // gb_gender
+            // lbl_message
             // 
-            this.gb_gender.Controls.Add(this.rb_genderMale);
-            this.gb_gender.Controls.Add(this.rb_genderFemale);
-            this.gb_gender.Location = new System.Drawing.Point(15, 200);
-            this.gb_gender.Name = "gb_gender";
-            this.gb_gender.Size = new System.Drawing.Size(228, 56);
-            this.gb_gender.TabIndex = 6;
-            this.gb_gender.TabStop = false;
-            this.gb_gender.Text = "Gender";
-            // 
-            // gb_rel
-            // 
-            this.gb_rel.Controls.Add(this.rb_single);
-            this.gb_rel.Controls.Add(this.rb_married);
-            this.gb_rel.Location = new System.Drawing.Point(311, 200);
-            this.gb_rel.Name = "gb_rel";
-            this.gb_rel.Size = new System.Drawing.Size(256, 56);
-            this.gb_rel.TabIndex = 7;
-            this.gb_rel.TabStop = false;
-            this.gb_rel.Text = "Relationship";
-            // 
-            // mtb_phone
-            // 
-            this.mtb_phone.Location = new System.Drawing.Point(402, 33);
-            this.mtb_phone.Mask = "(999) 000-0000";
-            this.mtb_phone.Name = "mtb_phone";
-            this.mtb_phone.Size = new System.Drawing.Size(165, 23);
-            this.mtb_phone.TabIndex = 6;
-            // 
-            // mtb_id
-            // 
-            this.mtb_id.Location = new System.Drawing.Point(98, 114);
-            this.mtb_id.Mask = "00000000000";
-            this.mtb_id.Name = "mtb_id";
-            this.mtb_id.Size = new System.Drawing.Size(145, 23);
-            this.mtb_id.TabIndex = 8;
-            // 
-            // tb_birthplace
-            // 
-            this.tb_birthplace.Location = new System.Drawing.Point(98, 169);
-            this.tb_birthplace.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.tb_birthplace.Name = "tb_birthplace";
-            this.tb_birthplace.Size = new System.Drawing.Size(145, 23);
-            this.tb_birthplace.TabIndex = 1;
-            this.tb_birthplace.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // tb_infoTotal
-            // 
-            this.tb_infoTotal.AutoSize = true;
-            this.tb_infoTotal.Location = new System.Drawing.Point(937, 50);
-            this.tb_infoTotal.Name = "tb_infoTotal";
-            this.tb_infoTotal.Size = new System.Drawing.Size(0, 15);
-            this.tb_infoTotal.TabIndex = 6;
-            // 
-            // btn_save
-            // 
-            this.btn_save.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btn_save.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.btn_save.Location = new System.Drawing.Point(731, 347);
-            this.btn_save.Name = "btn_save";
-            this.btn_save.Size = new System.Drawing.Size(159, 48);
-            this.btn_save.TabIndex = 9;
-            this.btn_save.Text = "Save\r\n";
-            this.btn_save.UseVisualStyleBackColor = true;
-            this.btn_save.Click += new System.EventHandler(this.btn_save_Click);
-            // 
-            // lbl_infoTotal
-            // 
-            this.lbl_infoTotal.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lbl_infoTotal.Location = new System.Drawing.Point(937, 47);
-            this.lbl_infoTotal.Name = "lbl_infoTotal";
-            this.lbl_infoTotal.Size = new System.Drawing.Size(377, 577);
-            this.lbl_infoTotal.TabIndex = 7;
-            this.lbl_infoTotal.Text = "...";
+            this.lbl_message.AutoSize = true;
+            this.lbl_message.Location = new System.Drawing.Point(12, 433);
+            this.lbl_message.Name = "lbl_message";
+            this.lbl_message.Size = new System.Drawing.Size(55, 15);
+            this.lbl_message.TabIndex = 11;
+            this.lbl_message.Text = "Message";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1326, 633);
-            this.Controls.Add(this.lbl_infoTotal);
-            this.Controls.Add(this.tb_infoTotal);
+            this.Controls.Add(this.lbl_message);
+            this.Controls.Add(this.lb_personalInfo);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.gb_personalInfo);
             this.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -615,12 +603,12 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.gb_personalInfo.ResumeLayout(false);
             this.gb_personalInfo.PerformLayout();
+            this.gb_rel.ResumeLayout(false);
+            this.gb_rel.PerformLayout();
             this.gb_foreign.ResumeLayout(false);
             this.gb_foreign.PerformLayout();
             this.gb_gender.ResumeLayout(false);
             this.gb_gender.PerformLayout();
-            this.gb_rel.ResumeLayout(false);
-            this.gb_rel.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -668,8 +656,8 @@
         private System.Windows.Forms.MaskedTextBox mtb_id;
         private System.Windows.Forms.TextBox tb_birthplace;
         private System.Windows.Forms.Button btn_save;
-        private System.Windows.Forms.Label tb_infoTotal;
-        private System.Windows.Forms.Label lbl_infoTotal;
+        private System.Windows.Forms.ListBox lb_personalInfo;
+        private System.Windows.Forms.Label lbl_message;
     }
 }
 
